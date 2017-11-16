@@ -4,12 +4,33 @@
 <title>Comments!</title>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="javascripts/comments.js"></script>
+<link rel="stylesheet" href = "style.css">
 </head>
 
 <body>
+<h1>Answer the question to find your best match!!!!</h1>
 <form id="commentForm" action="">
 <label for="name">Name: </label><input type="text" id="name" placeholder="Name"><br>
-<label for="gender">Gender: </label><input type="text" id="gender" placeholder="Gender"><br>
+<label for="ger">Gender: </label><select id = "gender">
+	<option value="male">male</option>
+	<option value="female">female</option>
+	</select><br>
+<label for="vert"> Do you feel more relaxed by yourself or with others?</label><select id = "vert">
+	<option value="self">by myself</option>
+	<option value="others">with others</option>
+	</select><br>
+<label for="place">Do you perfer living in big city or suburb?</label><select id = "place">
+	<option value="city">City</option>
+	<option value="suburb">Suburb</option>
+	</select><br>
+<label for="date">Which would you perfer for your first date with another?</label><select id="date">
+        <option value="movie">Movie</option>
+        <option value="dinner">Dinner</option>
+        </select><br>
+<label for="pet">If you decide to have a pet in home, you perfer...</label><select id = "pet">
+	<option value="cat">Cat</option>
+	<option value="dog">Dog</option>
+	</select><br>
 </form>
 
 <button id="postComment">Post Comment</button>

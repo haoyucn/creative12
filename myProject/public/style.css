@@ -1,0 +1,19 @@
+body{
+
+  font-size: 25px;
+  
+  padding: 20px;  
+
+  border: 20px;
+  
+  background-image: url("pattern.png");
+
+}
+
+label{
+  
+  font-size: 20px;
+  padding: 10px;
+
+}
+
