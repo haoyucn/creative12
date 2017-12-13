@@ -38,6 +38,8 @@ $(document).ready(function(){
   });
 
   $("#getComments").click(function() {
+   var statss = document.getElementById('quickstart-sign-in-status').textContent;
+   if(statss == 'Signed in'){
    var myobj = {Name:$("#name").val(),Gender:$("#gender").val(),Vert:$("#vert").val(),Place:$("#place").val(),date:$("#date").val(),Pet:$("#pet").val()};
     jobj = JSON.stringify(myobj);
 
@@ -122,6 +124,10 @@ $(document).ready(function(){
        currentScore = 0;}
       }
     })
+   }
+   else{
+   alert("please sign in first");
+   }
   })
 
   $("#deleteComments").click(function(){
